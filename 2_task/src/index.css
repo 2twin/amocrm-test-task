@@ -38,6 +38,16 @@ body {
   font-family: var(--font-family-inter);
 }
 
+.background {
+  max-width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .circle {
   position: absolute;
   z-index: -1;
@@ -385,16 +395,6 @@ body {
 }
 
 @media screen and (max-width: 620px) {
-  .background {
-    overflow: hidden;
-    max-width: 100vw;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   .header__nav ul li:last-child {
     display: none;
   }
